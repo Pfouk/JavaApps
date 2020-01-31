@@ -16,9 +16,9 @@ public class RandomElementsPrint {
             throw new IllegalArgumentException("Number of arguments can't be negative");
         }
         Random randomIntToPrint = new Random();
-        Random printInLineOrNextLine = new Random();
+        Random printInLineOrNextLineDecision = new Random();
         for (int i = 0; i < enteredNumberOfElements; i++) {
-            switch (printInLineOrNextLine.nextInt(2)){
+            switch (printInLineOrNextLineDecision.nextInt(2)){
                 case 0:
                     System.out.println(randomIntToPrint.nextInt());
                     break;

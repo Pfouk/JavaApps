@@ -7,16 +7,16 @@ public class RandomElementsPrintConsole {
         if (args.length != 1 ) {
             throw new IllegalArgumentException("Only one int argument should be given");
         }
-        int numberOfElements = Integer.parseInt(args[0]);
-        Random r = new Random();
-        Random prnt = new Random();
-        for (int i = 0; i < numberOfElements; i++) {
-            switch (prnt.nextInt(2)){
+        int enteredNumberOfElements = Integer.parseInt(args[0]);
+        Random randomIntToPrint = new Random();
+        Random printInLineOrNextLineDecision = new Random();
+        for (int i = 0; i < enteredNumberOfElements; i++) {
+            switch (printInLineOrNextLineDecision.nextInt(2)){
                 case 0:
-                    System.out.println(r.nextInt());
+                    System.out.println(randomIntToPrint.nextInt());
                     break;
                 case 1:
-                    System.out.print(r.nextInt() + " ");
+                    System.out.print(randomIntToPrint.nextInt() + " ");
                     break;
                 default:
                     System.out.println("Invalid choice");
