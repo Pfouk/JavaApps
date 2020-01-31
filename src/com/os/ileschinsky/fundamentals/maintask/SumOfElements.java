@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class SumOfElements {
     public static void main(String[] args) {
-        int numberOfElements;
+        int enteredNumberOfElements;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter number of elements: ");
         if (!in.hasNextInt()){
             throw new IllegalArgumentException("Number of elements should be int!");
         }
-        numberOfElements = in.nextInt();
-        if (numberOfElements < 0) {
+        enteredNumberOfElements = in.nextInt();
+        if (enteredNumberOfElements < 0) {
             throw new IllegalArgumentException("Number of arguments can't be negative");
         }
-        int[] elements = new int [numberOfElements];
+        int[] enterdElementsArray = new int [enteredNumberOfElements];
         System.out.print("Enter the operation + or *: ");
         in = new Scanner(System.in);
-        String choice = in.nextLine();
+        String chosenOperationString = in.nextLine();
         int result;
-        switch (choice) {
+        switch (chosenOperationString) {
             case "+":
                 result = 0;
                 break;
@@ -30,15 +30,15 @@ public class SumOfElements {
                 throw new IllegalArgumentException("Operation should be only + or *");
         }
         in = new Scanner(System.in);
-        for (int i = 0; i < numberOfElements; i++) {
+        for (int i = 0; i < enteredNumberOfElements; i++) {
             System.out.printf("Enter %d element: ", i);
-            elements[i] = in.nextInt();
+            enterdElementsArray[i] = in.nextInt();
         }
-        for (int i = 0; i < numberOfElements; i++) {
-            if (choice.equals("+")) {
-                result += elements[i];
+        for (int i = 0; i < enteredNumberOfElements; i++) {
+            if (chosenOperationString.equals("+")) {
+                result += enterdElementsArray[i];
             } else {
-                result *= elements[i];
+                result *= enterdElementsArray[i];
             }
         }
         System.out.println("The result is: " + result);
