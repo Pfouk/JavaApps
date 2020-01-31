@@ -2,13 +2,13 @@
 My Java apps
 Tasks Java Fundamental:
 Main Task:
-1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.firsttask.MainTaskFirst
-1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.secondtask.MainTaskSecond  
-   $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.secondtask.MainTaskSecondConsole %ELEMENTS%  
-1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.thirdtask.MainTaskThird  
-   $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.thirdtask.MainTaskThirdConsole %NUMBER_OF_ELEMENTS% 
-1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fourthtask.MainTaskFourth
-1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fifthtask.MainTaskFifth
+1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.GreetingUser
+1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.PrintElementsReverse  
+   $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.PrintElementsReverseConsole %ELEMENTS%  
+1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.RandomElementsPrint  
+   $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.RandomElementsPrintConsole %NUMBER_OF_ELEMENTS% 
+1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.SumOfElements
+1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.fundamentals.maintask.MonthByValue
 
 First Optional Task:
 1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.firstoptional/FirstOptional
