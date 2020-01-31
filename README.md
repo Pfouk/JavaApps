@@ -13,3 +13,4 @@ Main Task:
 First Optional Task:
 1. $APP_ROOT/ java -classpath ./bin com.os.ileschinsky.firstoptional/FirstOptional
 
+javac -d bin src/com/os/ileschinsky/fundamentals/optionaltask/FirstOptional.java
